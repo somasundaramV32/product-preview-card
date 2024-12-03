@@ -1,0 +1,135 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color:  hsl(30, 38%, 92%);
+  font-size: 14px;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.con{
+  margin: 0 auto; 
+}
+.grid{
+  max-width: 700px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color:#fff;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.card img{
+  max-width: 100%;
+  display: inherit;
+}
+.dis{
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+h2{
+  font-family:"Montserrat";
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 500;
+  color: hsl(228, 12%, 48%);
+}
+.hh{
+  color: hsl(212, 21%, 14%);
+  font-weight: 700;
+  font-family: "Fraunces";
+  font-size: 34px;
+  line-height: 1em;
+}
+.detail{
+   font-family:"Montserrat";
+  font-optical-sizing: auto;
+  font-style: "normal";
+  font-weight: 500;
+  font-size: 18px;
+  color: hsl(228, 12%, 48%);
+  word-spacing: 1px;
+  line-height: 1.6em;
+}
+.price{
+  
+  display: flex;
+  align-items: center;
+}
+p.nav{
+  font-family:"Fraunces";
+  font-optical-sizing: auto;
+  font-style: "normal";
+  font-size: 25px;
+  color: hsl(158, 36%, 37%);
+  font-weight: 700;   
+}
+p.over{
+  font-family:"Montserrat";
+  font-optical-sizing: auto;
+  font-size: 14px;
+  text-decoration: line-through;
+  color: hsl(228, 12%, 48%);
+  margin-left: 20px;   
+}
+button.cart{
+  background-color: hsl(158, 36%, 37%);
+  border: none;
+  padding: 12px 0;
+  border-radius: 12px;
+  color: white;
+  font-size: 14px;
+  font-weight: 700px;
+  cursor: pointer;
+}
+button.cart img{
+  padding-right: 7px;
+}
+button.cart:hover{
+  background-color: hsl(158, 36%, 20%);
+}
+@media screen and (min-width:375px) and (max-width:700px){
+  
+      .con{
+          margin: 15px auto;
+          padding: 0 15px;
+      }
+      .grid{
+          grid-template-columns: 1fr;
+          width: 340px;
+      }
+      .card img{
+          max-height: 290px;
+          width: 100%;
+          object-fit: cover;
+
+      }
+      .dis{
+          padding: 24px;
+      }
+      h2, h1.hh, p.detail, .price{
+          padding-bottom: 16px;
+      }
+      h1.hh{
+          font-size:34px;
+       }
+       p.detail{
+          font-size:12px; 
+       }
+       .price{
+          font-size:23px; 
+       }
+       button.cart{
+           padding:12px 0;
+          font-size:13px; 
+       }
+     
+}
